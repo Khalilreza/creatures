@@ -29,7 +29,7 @@
     </head>   
     <body>
     <h1>Creatures</h1>
-    <h3>A JavaScript data attributes example by NAME HERE</h3>
+    <h3>A JavaScript data attributes example by Khalil Reza</h3>
     <p>This page demonstrates how to use JavaScript data attributes to differentiate data.</p>
     <p>When you click <b>Show Creature Home</b>, the background color will change color based on their natural environment:
     </p> 
@@ -44,7 +44,7 @@
     <p>When you click <b>Show Creature Type</b>, the border color and style will changed based on the type of creature:</p>
     <div> 
         <ul>
-            <li>animal: soli red</li>
+            <li>animal: solid red</li>
             <li>insect: dashed orange</li>
         </ul>
     </div>
@@ -170,7 +170,11 @@
                 clear background color to white
                 
             */
-            alert("clearAll()");
+            const myNodeList = document.querySelectorAll("div.creature");
+            myNodeList.forEach(function(el){
+                el.style.backgroundColor = "#fff";
+                el.style.border = "1px solid #000";
+            });
         }//end clearAll()
 
     </script>    
